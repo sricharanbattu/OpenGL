@@ -133,17 +133,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="include\FBO.cpp" />
+    <ClCompile Include="include\Shaders.cpp" />
+    <ClCompile Include="include\Texture.cpp" />
     <ClCompile Include="src\application.cpp" />
     <ClCompile Include="src\application2.cpp" />
     <ClCompile Include="src\Shader_class.cpp" />
+    <ClCompile Include="src\Test2_UAV.cpp" />
+    <ClCompile Include="src\Test2_UAV_unitTests.cpp" />
+    <ClCompile Include="src\Test2_UAV_utilities.cpp" />
+    <ClCompile Include="include\utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="res\shaders\BasicShader.shader" />
     <None Include="res\shaders\frag_shader.frag" />
+    <None Include="res\shaders\FS_SampleTexture.frag" />
+    <None Include="res\shaders\FS_UAVTest.frag" />
     <None Include="res\shaders\vertex_shader.vert" />
+    <None Include="res\shaders\VS_passPosAndTex.vert" />
+    <None Include="res\shaders\VS_UAVTest.vert" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\FBO.h" />
+    <ClInclude Include="include\import_gl.h" />
+    <ClInclude Include="include\Shaders.h" />
+    <ClInclude Include="include\Texture.h" />
     <ClInclude Include="src\Shader_class.h" />
+    <ClInclude Include="src\Test2_UAV.h" />
+    <ClInclude Include="src\Test2_UAV_unitTests.h" />
+    <ClInclude Include="src\Test2_UAV_utilities.h" />
+    <ClInclude Include="include\utilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,5 +1,5 @@
 
-#include <GL/glew.h>
+/*#include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
 #define STB_IMAGE_IMPLEMENTATION
@@ -41,15 +41,15 @@ int main(void)
 
     glViewport(0, 0, 800, 600);
 
-    /*
-    ShaderCodes shader_codes("vertex_shader.vert", "frag_shader.frag");
+    
+    ShaderCodes shader_codes("res/shaders/vertex_shader.vert", "res/shaders/frag_shader.frag");
     const char* vertex_source = shader_codes.vertex_code.c_str();
     const char* frag_source = shader_codes.frag_code.c_str();
 
-    */
+    
 
 
-    const char* vertex_source = "#version 330 core\n"
+    /*const char* vertex_source = "#version 330 core\n"
         "layout (location = 0) in vec3 aPos;\n"
         "layout (location = 1) in vec3 aColor;\n" 
         "layout (location = 2) in vec2 aTex;\n"
@@ -72,8 +72,8 @@ int main(void)
         "void main()\n"
         "{\n"
         "  //FragColor = texture(ourTexture, outTexcord);\n"
-        "  // FragColor = outColor*texture(ourTexture, outTexcord);\n"
-        "   FragColor = outColor;\n"
+        "  FragColor = outColor*texture(ourTexture, outTexcord);\n"
+        "  //FragColor = outColor;\n"
         "}\0";
 
     
@@ -184,7 +184,7 @@ int main(void)
     glEnableVertexAttribArray(1);
     glEnableVertexAttribArray(2);
    
-    float theta_res = 0.0005;
+    float theta_res = 3.14;
     const float pi = 3.141592;
     float theta = 0;
 
@@ -213,3 +213,4 @@ int main(void)
     glfwTerminate();
     return 0;
 }
+*/

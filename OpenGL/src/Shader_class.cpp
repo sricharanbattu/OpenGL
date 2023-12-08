@@ -1,10 +1,12 @@
 #include "Shader_class.h"
 #include "fstream"
 #include "sstream"
+#include <iostream>
 
 ShaderCodes::ShaderCodes(std::string vert_path, std::string frag_path) {
 	std::ifstream vShaderfile;
 	std::ifstream fShaderfile;
+
 
 	vShaderfile.open(vert_path);
 	fShaderfile.open(frag_path);
@@ -16,7 +18,6 @@ ShaderCodes::ShaderCodes(std::string vert_path, std::string frag_path) {
 	 
 	vertex_code = vShaderStream.str();
 	frag_code = fShaderStream.str();
-
 
 }
 

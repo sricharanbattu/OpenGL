@@ -1,4 +1,2 @@
-﻿  application2.cpp
-C:\Users\srich\source\repos\OpenGL\OpenGL\src\application2.cpp(187,29): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\srich\source\repos\OpenGL\OpenGL\src\application2.cpp(188,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+﻿  Test2_UAV_unitTests.cpp
   OpenGL.vcxproj -> C:\Users\srich\source\repos\OpenGL\x64\Debug\OpenGL.exe
